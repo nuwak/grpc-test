@@ -1,0 +1,7 @@
+### hello
+GRPC localhost:50051/helloworld.Greeter/SayHello
+
+{
+  "name": "adsfasdf",
+  "age": 17
+}
