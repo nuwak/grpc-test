@@ -16,3 +16,6 @@
 ## todo
  - logging
  - native-client for stream?
+
+### tools
+ - https://json-to-proto.github.io/
