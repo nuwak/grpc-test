@@ -11,3 +11,8 @@
 ### Sharing gRPC protobufs between microservices
 
  - https://jozefcipa.com/blog/sharing-grpc-protobufs-between-microservices/
+
+
+## todo
+ - logging
+ - native-client for stream?

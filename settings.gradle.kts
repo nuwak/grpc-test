@@ -1,5 +1,5 @@
 
-rootProject.name = "grps-test"
+rootProject.name = "grpc-test"
 include("server")
 include("proto")
 include("stub-lite")
