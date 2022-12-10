@@ -1,5 +1,6 @@
 package org.example.helloworld;
 
+import io.grpc.Context
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.asFlow
@@ -10,6 +11,8 @@ class HelloWorldService : GreeterGrpcKt.GreeterCoroutineImplBase() {
 //    private val log: Logger = LoggerFactory.getLogger(HelloWorldService::class.java)
 
     override fun sayHello(request: HelloRequest): Flow<HelloReply> {
+        val cl = Context.current()
+        println(cl)
         println(request)
         return (0..10).asFlow().map {
             delay(300)

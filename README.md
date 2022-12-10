@@ -14,8 +14,11 @@
 
 
 ## todo
- - logging
- - native-client for stream?
+ - [ ] logging
+ - [ ] native-client for stream?
+ - [x] headers?
+ - [x] intercept
 
 ### tools
  - https://json-to-proto.github.io/
+ - [Kotlin Code Generator and Runtime for Protocol Buffers](https://github.com/streem/pbandk)

@@ -1,12 +1,26 @@
 package org.example.helloworld
 
-import io.grpc.Server
-import io.grpc.ServerBuilder
+import io.grpc.*
 
 class ServerGrpc(private val port: Int) {
+    internal class BookServerInterceptor : ServerInterceptor {
+        override fun <ReqT : Any?, RespT : Any?> interceptCall(
+            call: ServerCall<ReqT, RespT>?,
+            headers: io.grpc.Metadata?,
+            next: ServerCallHandler<ReqT, RespT>?
+        ): ServerCall.Listener<ReqT> {
+            println("Recieved following metadata: $headers")
+            val im = Metadata.Key.of("A-IM", Metadata.ASCII_STRING_MARSHALLER)
+            println(im)
+            println(headers?.get(im))
+            return next?.startCall(call, headers) ?: error("error")
+        }
+    }
+
     val server: Server = ServerBuilder
         .forPort(port)
         .addService(HelloWorldService())
+        .intercept(BookServerInterceptor())
         .build()
 
     fun start() {

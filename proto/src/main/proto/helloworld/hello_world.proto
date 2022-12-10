@@ -19,6 +19,12 @@ message HelloRequest {
   int32 age = 2;
 }
 
+enum Colors {
+  RED = 0;
+  BLUE = 1;
+  BLACK = 2;
+}
+
 // The response message containing the greetings
 message HelloReply {
   string message = 1;
