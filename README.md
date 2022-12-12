@@ -33,6 +33,7 @@
 - [Георгий Набойченко, Тинькофф - Как мы gRPC в проект тащили](https://www.youtube.com/watch?v=9WYTyTi_q38)
 - [TECH SCHOOL](https://www.youtube.com/@TECHSCHOOLGURU)
 - [Александр Борисов — Перенимаем опыт Google в построении микросервисов с gRPC](https://www.youtube.com/watch?v=zPbaKUIcFx0)
+- [Python и сеть: REST, JSON, GraphQL или gRPC? / Григорий Петров](https://www.youtube.com/watch?v=XXzjxZH9ZUI)
 
 ### Tutorials
 

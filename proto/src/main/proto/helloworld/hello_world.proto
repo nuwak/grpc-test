@@ -10,12 +10,14 @@ package helloworld;
 // The greeting service definition.
 service Greeter {
   // Sends a greeting
-  rpc SayHello (HelloRequest) returns (stream HelloReply) {}
+  rpc SayHello (HelloRequest) returns (stream HelloReply) {
+    option deprecated = true;
+  }
 }
 
 // The request message containing the user's name.
 message HelloRequest {
-  string name = 1;
+  string name = 1 [deprecated = true];
   int32 age = 2;
 }
 
