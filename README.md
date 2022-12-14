@@ -6,6 +6,8 @@
 - https://github.com/georgy-n/grpc-experiments
 - https://github.com/grpc/grpc-java/tree/master/examples/src/main/java/io/grpc/examples
 - https://github.com/godspeedchu/grpc-realworld-example
+- https://dev.to/aleksk1ng/kotlin-grpc-with-spring-9np
+- https://github.com/AleksK1NG/Kotlin-Spring-gRPC-Microservice
 
 ### libs
 
@@ -49,12 +51,11 @@
 
 ## todo
 
-- [ ] logging
-- [ ] native-client for stream?
-- [ ] 
-  watch [[gRPC #15] Implement gRPC interceptor + JWT authentication in Go](https://www.youtube.com/watch?v=kVpB-uH6X-s&list=PLy_6D98if3UJd5hxWNfAqKMr15HZqFnqf&index=20)
+- [ ] watch [[gRPC #15] Implement gRPC interceptor + JWT authentication in Go](https://www.youtube.com/watch?v=kVpB-uH6X-s&list=PLy_6D98if3UJd5hxWNfAqKMr15HZqFnqf&index=20)
 - [x] headers?
 - [x] intercept
+- [x] logging
+- [ ] native-client for stream?
 
 ### Mapping DTO
 

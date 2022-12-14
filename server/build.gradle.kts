@@ -11,6 +11,7 @@ java {
 
 dependencies {
     implementation(project(":stub"))
+    implementation("ch.qos.logback:logback-classic:1.4.5")
 //    implementation("ch.qos.logback:logback:0.5")
     runtimeOnly("io.grpc:grpc-netty:${rootProject.ext["grpcVersion"]}")
 
